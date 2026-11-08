@@ -38,10 +38,19 @@ export const metadata: Metadata = {
     type: "website",
     locale: "es_ES",
     siteName: "Montse y Luis",
-    images: [{ url: "/og.jpg", width: 800, height: 800, alt: "Montse y Luis", type: "image/jpeg" }],
+    url: siteUrl,
+    images: [
+      {
+        url: "/og.jpg",
+        width: 1080,
+        height: 1080,
+        alt: "Montse y Luis — 15 de noviembre de 2026",
+        type: "image/jpeg",
+      },
+    ],
   },
   twitter: {
-    card: "summary",
+    card: "summary_large_image",
     title: "Montse y Luis",
     description:
       "Queremos que seas parte de este día. Accedé a la invitación completa y confirmá tu asistencia.",

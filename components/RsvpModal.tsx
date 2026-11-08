@@ -70,9 +70,13 @@ export function RsvpModal({ open, onClose }: RsvpModalProps) {
         throw new Error(data.error || "No se pudo guardar");
       }
       setStatus("ok");
-    } catch {
+    } catch (err) {
       setStatus("error");
-      setError("No se pudo registrar ahora. Intentá de nuevo en un momento.");
+      setError(
+        err instanceof Error && err.message
+          ? err.message
+          : "No se pudo registrar ahora. Intentá de nuevo en un momento.",
+      );
     }
   };
 
