@@ -72,7 +72,7 @@ function Hero() {
     <section className="relative flex min-h-[52vh] flex-col justify-end px-8 pb-6 pt-16">
       <Reveal>
         <p className="font-serif text-sm uppercase tracking-[0.38em] text-[#B794D0]">
-          Nuestra boda
+          Nuestra boda civil
         </p>
       </Reveal>
     </section>
